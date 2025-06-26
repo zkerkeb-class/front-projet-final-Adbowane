@@ -1,0 +1,43 @@
+/* Animations globales */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseSlow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* Application des animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 1.5s infinite;
+}
+
+/* Styles globaux pour le fond et les cartes */
+.bg-crm-background {
+  background: linear-gradient(to bottom right, #1E2A44, #2A3D5E);
+}
+
+.crm-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 196, 180, 0.3);
+}
